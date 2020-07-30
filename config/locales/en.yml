@@ -1,2 +1,34 @@
 en:
-  title: "Hello world"
+  layouts:
+    application:
+      title: Ruby on Rails Tutorial Sample App
+      english: English
+      vietnamese: Vietnamese
+  static_pages:
+    home:
+      title: Home
+      sample_app: Sample App
+      content_html: This is the home page for the %{href} sample application.
+      href_title: Ruby on Rails Tutorial
+    help:
+      title: Help
+      content_help_html: Get help on the Ruby on Rails Tutorial at the %{help_link}
+      content_book_html: To get help on this sample app, see the %{book_link}
+      help_link_title: Rails Tutorial help section
+      book_link_title_html: <em>Ruby on Rails Tutorial</em> book.
+    contact:
+      title: Contact
+      content_html: Contact the Ruby on Rails Tutorial about the sample app at the %{contact_link}
+      contact_link_title: contact page
+    about:
+      title: About
+      content_rails_html: The %{rails_tutorial_link},
+      content_learn_html: part of the %{learn_enough_link} family of tutorials,
+      content_book_html: is a %{rails_tutorial_book_link}
+      content_cast_html: and %{screen_cast_link}
+      content_home_html: to teach web development with %{rails_home_page_link}. This is the sample app for the tutorial.
+      rails_tutorial_link_title_html: <em>Ruby on Rails Tutorial</em>
+      learn_enough_link_title: Learn Enough
+      rails_tutorial_book_link_title: book
+      screen_cast_link_title: screencast series
+      rails_home_page_link_title: Ruby on Rails

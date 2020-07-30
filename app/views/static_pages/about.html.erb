@@ -1,0 +1,9 @@
+<% content_for :title, t(".title") %>
+<h1><%= t ".title" %></h1>
+<p>
+  <%= t(".content_rails_html", rails_tutorial_link: link_to(t(".rails_tutorial_link_title_html"), Settings.links.rail_tutorial_link)) %>
+  <%= t(".content_learn_html", learn_enough_link: link_to(t(".learn_enough_link_title"), Settings.links.learn_enough_link)) %>
+  <%= t(".content_book_html", rails_tutorial_book_link: link_to(t(".rails_tutorial_book_link_title"), Settings.links.rail_tutorial_book_link)) %>
+  <%= t(".content_cast_html", screen_cast_link: link_to(t(".screen_cast_link_title"), Settings.links.screen_cast_link)) %>
+  <%= t(".content_home_html", rails_home_page_link: link_to(t(".rails_home_page_link_title"), Settings.links.rails_home_page_link)) %>
+</p>
