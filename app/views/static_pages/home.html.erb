@@ -1,0 +1,5 @@
+<% provide :title, t(".title") %>
+<h1><%= t ".sample_app" %></h1>
+<p>
+  <%= t(".content_html", href: link_to(t(".href_title"), Settings.links.rail_tutorial_link)) %>
+</p>
