@@ -1,0 +1,34 @@
+vi:
+  layouts:
+    application:
+      title: Ứng dụng mẫu khoá học Ruby on Rails
+      english: Tiếng Anh
+      vietnamese: Tiếng Việt
+  static_pages:
+    home:
+      title: Trang chủ
+      sample_app: Ứng dụng mẫu.
+      content_html: Đây là trang chủ cho ứng dụng mẫu %{href}.
+      href_title: khoá học Ruby on Rails
+    help:
+      title: Trợ giúp
+      content_help_html: Nhận sự trợ giúp về khoá học Ruby on Rails %{help_link}.
+      content_book_html: Để nhận trợ giúp về ứng dụng mẫu này, hãy xem %{book_link}
+      help_link_title: Phần trợ giúp của Rails Tutorial
+      book_link_title_html: sách <em>khoá họcRuby on Rails</em>.
+    contact:
+      title: Liên hệ
+      content_html: Liên hệ hướng dẫn về Ruby on Rails về ứng dụng mẫu tại %{contact_link}
+      contact_link_title: trang liên hệ
+    about:
+      title: Giới thiệu
+      content_rails_html: Khoá học %{rails_tutorial_link},
+      content_learn_html: một phần của khoá học %{learn_enough_link},
+      content_book_html: là một %{rails_tutorial_book_link}
+      content_cast_html: và %{screen_cast_link}
+      content_home_html: để phát triển web với %{rails_home_page_link}. Đây là một ứng dựng mẫu cho khoá học.
+      rails_tutorial_link_title_html: <em>Ruby on Rails</em>
+      learn_enough_link_title: Learn Enough
+      rails_tutorial_book_link_title: cuốn sách
+      screen_cast_link_title: screencast series
+      rails_home_page_link_title: Ruby on Rails
