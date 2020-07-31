@@ -1,15 +1,17 @@
 en:
   layouts:
     application:
+      sample_app: Sample App
       title: Ruby on Rails Tutorial Sample App
       english: English
       vietnamese: Vietnamese
   static_pages:
     home:
       title: Home
-      sample_app: Sample App
+      sample_app: Welcome to the Sample App
       content_html: This is the home page for the %{href} sample application.
       href_title: Ruby on Rails Tutorial
+      sign_up: Sign up now!
     help:
       title: Help
       content_help_html: Get help on the Ruby on Rails Tutorial at the %{help_link}
@@ -32,3 +34,6 @@ en:
       rails_tutorial_book_link_title: book
       screen_cast_link_title: screencast series
       rails_home_page_link_title: Ruby on Rails
+  users:
+    new:
+      title: Sign Up

@@ -1,6 +1,7 @@
 vi:
   layouts:
     application:
+      sample_app: Ứng dụng mẫu
       title: Ứng dụng mẫu khoá học Ruby on Rails
       english: Tiếng Anh
       vietnamese: Tiếng Việt
@@ -10,6 +11,7 @@ vi:
       sample_app: Ứng dụng mẫu.
       content_html: Đây là trang chủ cho ứng dụng mẫu %{href}.
       href_title: khoá học Ruby on Rails
+      sign_up: Đăng ký ngay!
     help:
       title: Trợ giúp
       content_help_html: Nhận sự trợ giúp về khoá học Ruby on Rails %{help_link}.
@@ -32,3 +34,6 @@ vi:
       rails_tutorial_book_link_title: cuốn sách
       screen_cast_link_title: screencast series
       rails_home_page_link_title: Ruby on Rails
+  users:
+    new:
+      title: Đăng ký
