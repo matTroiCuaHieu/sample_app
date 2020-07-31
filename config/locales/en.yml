@@ -2,14 +2,23 @@ en:
   layouts:
     application:
       title: Ruby on Rails Tutorial Sample App
+    header:
+      sample_app: Sample App
+    footer:
+      content1_html: The %{href}
+      href_title1: "Ruby on Rails Tutorial"
+      content2_html: by %{href}
+      href_title2: "Machael Hartl"
+      new: News
       english: English
       vietnamese: Vietnamese
   static_pages:
     home:
       title: Home
-      sample_app: Sample App
+      sample_app: Welcome to the Sample App
       content_html: This is the home page for the %{href} sample application.
       href_title: Ruby on Rails Tutorial
+      sign_up: Sign up now!
     help:
       title: Help
       content_help_html: Get help on the Ruby on Rails Tutorial at the %{help_link}
@@ -22,6 +31,7 @@ en:
       contact_link_title: contact page
     about:
       title: About
+
       content_rails_html: The %{rails_tutorial_link},
       content_learn_html: part of the %{learn_enough_link} family of tutorials,
       content_book_html: is a %{rails_tutorial_book_link}
@@ -32,3 +42,8 @@ en:
       rails_tutorial_book_link_title: book
       screen_cast_link_title: screencast series
       rails_home_page_link_title: Ruby on Rails
+  users:
+    sign_in: Sign In
+    new:
+      title: Sign Up
+      content: This will be a signup page for new users.
