@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/new'
   get "users/new"
   scope "(:locale)", locale: /vi|en/ do
     root "static_pages#home"
