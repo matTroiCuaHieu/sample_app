@@ -11,3 +11,8 @@ links:
 image:
   rails:
     width: "200px"
+user:
+  username_maximum: 50
+  email_maximum: 255
+  email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  password_minimum: 6
