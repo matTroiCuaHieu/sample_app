@@ -65,8 +65,10 @@ vi:
     new:
       title: Đăng nhập
       login: Đăng nhập
-      new_user: New user?
-      signup_now: Người dùng mới?
+      new_user: Người dùng mới?
+      signup_now: Đăng ký ngay!
       email: Thư điện tử
       password: Mật khẩu
       error_email_password_invalid: Email / mật khẩu không hợp lệ
+      remember_me: Ghi nhớ tài khoản
+      login_successfully: Đăng nhập thành công!

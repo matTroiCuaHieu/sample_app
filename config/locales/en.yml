@@ -5,7 +5,7 @@ en:
     header:
       sample_app: Sample App
       users: Users
-      account_html: Account <b class="caret"></b>
+      account: Account
       profile: Profile
       settings: Settings
       logout: Log out
@@ -70,3 +70,5 @@ en:
       email: Email
       password: Password
       error_email_password_invalid: Invalid email/password combination
+      remember_me: Remember me on this computer
+      login_successfully: Login successfully!
