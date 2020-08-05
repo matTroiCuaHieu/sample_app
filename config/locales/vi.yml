@@ -4,6 +4,11 @@ vi:
       title: Ứng dụng mẫu khoá học Ruby on Rails
     header:
       sample_app: Ứng dụng mẫu
+      users: Người dùng
+      account: Tài khoản
+      profile: Hồ sơ
+      settings: Cài đặt
+      logout: Đăng xuất
     footer:
       content1_html: Hướng dẫn %{href}
       href_title1: " Ruby on Rails"
@@ -56,3 +61,12 @@ vi:
     error: lỗi
     welcome_to_the_sample_app: Chào mừng đến với ứng dụng mẫu!
     error_signup: Đăng ký lỗi!
+  sessions:
+    new:
+      title: Đăng nhập
+      login: Đăng nhập
+      new_user: New user?
+      signup_now: Người dùng mới?
+      email: Thư điện tử
+      password: Mật khẩu
+      error_email_password_invalid: Email / mật khẩu không hợp lệ
