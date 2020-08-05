@@ -46,3 +46,13 @@ vi:
     new:
       title: Đăng ký
       content: Đây sẽ là trang đang nhập cho người dùng mới.
+      name: Tên
+      email: Thư điện tử
+      password: Mật khẩu
+      password_confirmation: Xác nhận mật khẩu
+      create_account: Tạo tài khoản
+  shared:
+    the_form_contains:  Mẫu có
+    error: lỗi
+    welcome_to_the_sample_app: Chào mừng đến với ứng dụng mẫu!
+    error_signup: Đăng ký lỗi!
