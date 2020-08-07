@@ -4,6 +4,11 @@ en:
       title: Ruby on Rails Tutorial Sample App
     header:
       sample_app: Sample App
+      users: Users
+      account_html: Account <b class="caret"></b>
+      profile: Profile
+      settings: Settings
+      logout: Log out
     footer:
       content1_html: The %{href}
       href_title1: "Ruby on Rails Tutorial"
@@ -31,7 +36,6 @@ en:
       contact_link_title: contact page
     about:
       title: About
-
       content_rails_html: The %{rails_tutorial_link},
       content_learn_html: part of the %{learn_enough_link} family of tutorials,
       content_book_html: is a %{rails_tutorial_book_link}
@@ -57,3 +61,12 @@ en:
     error: errors
     welcome_to_the_sample_app: Welcome to the Sample App!
     error_signup: Sign up error!
+  sessions:
+    new:
+      title: Log in
+      login: Log in
+      new_user: New user?
+      signup_now: Sign up now!
+      email: Email
+      password: Password
+      error_email_password_invalid: Invalid email/password combination
