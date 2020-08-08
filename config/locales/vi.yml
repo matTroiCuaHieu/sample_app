@@ -51,11 +51,23 @@ vi:
     new:
       title: Đăng ký
       content: Đây sẽ là trang đang nhập cho người dùng mới.
+      create_account: Tạo tài khoản
+    edit:
+      title: Chỉnh sửa
+      update_your_profile: Cập nhật hồ sơ cá nhân
+      save_changes: Lưu thay đổi
+      change: Thay đổi
+    form:
       name: Tên
       email: Thư điện tử
       password: Mật khẩu
       password_confirmation: Xác nhận mật khẩu
-      create_account: Tạo tài khoản
+    alert:
+      profile_updated: Hồ sơ cá nhân đã cập nhật!
+      please_login: Vui lòng hãy đăng nhập!
+      user_deleted: Người dùng đã bị xóa!
+    index:
+      title: Tất cả người dùng
   shared:
     the_form_contains:  Mẫu có
     error: lỗi

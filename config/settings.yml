@@ -20,3 +20,6 @@ avatar_size: 80
 boolean:
   true: 1
   false: 0
+avatar:
+  change_link: "https://gravatar.com/emails"
+pagination: 15

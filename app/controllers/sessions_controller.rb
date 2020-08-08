@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
       log_in user
       params[:session][:remember_me] == Settings.boolean.true ? remember(user) : forget(user)
       flash[:success] = t "sessions.new.login_successfully"
-      redirect_to user
+      redirect_back_or user
     else
       flash[:danger] = t "sessions.new.error_email_password_invalid"
       render :new
