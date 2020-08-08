@@ -3,13 +3,13 @@ class UsersController < ApplicationController
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
   before_action :find_user, only: :show
-  
+
   def index
     @users = User.page(params[:page]).per Settings.pagination
   end
 
   def show
-    return if @user
+    return if @user&.activated
 
     flash[:warning] = t ".alert.user_not_found"
     redirect_to root_path
@@ -22,11 +22,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "shared.welcome_to_the_sample_app"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "user_mailer.please_activate"
+      redirect_to root_url
     else
-      flash[:danger] = t "shared.error_signup"
+      flash[:danger] = t "alert.error_signup"
       render :new
     end
   end

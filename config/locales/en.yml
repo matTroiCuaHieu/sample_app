@@ -75,6 +75,8 @@ en:
       user_deleted: User deleted!
       profile_update_failed: Profile update failed!
       user_not_found: User not found!
+      account_activated: Account activated!
+      invalid_activation_link: Invalid activation link!
     index:
       title: All users
   shared:
@@ -93,3 +95,14 @@ en:
       error_email_password_invalid: Invalid email/password combination
       remember_me: Remember me on this computer
       login_successfully: Login successfully!
+    alert:
+      account_not_activated: Account not activated. Check your email for the activation link.
+  user_mailer:
+    alert: Account activation!
+    hi: Hi
+    greeting: "Hi"
+    welcome: "Welcome to the Sample App! Click on the link below to activate your account: "
+    activate: "Activate"
+    please_activate: Please activate!
+    password_reset: Password Reset
+    username_html: "@user.name"
