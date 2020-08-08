@@ -10,6 +10,7 @@ gem "bootstrap-sass", "3.4.1"
 gem "bootstrap4-kaminari-views", "~> 1.0.1"
 gem "config"
 gem "faker", "2.1.2"
+gem "figaro"
 gem "jbuilder", "~> 2.7"
 gem "jquery-rails", "4.3.1"
 gem "kaminari", "~> 1.2.1"
@@ -39,5 +40,3 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
