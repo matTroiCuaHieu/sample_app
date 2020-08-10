@@ -16,6 +16,10 @@ module SessionsHelper
     end
   end
 
+  def current_user? user
+    user && user == current_user
+  end
+
   def logged_in?
     current_user.present?
   end
@@ -37,5 +41,14 @@ module SessionsHelper
     cookies.permanent.signed[:user_id] = user.id
     cookies.permanent[:remember_token] = user.remember_token
   end
+
   # rubocop:enable Rails/HelperInstanceVariable
+  def redirect_back_or default
+    redirect_to session[:forwarding_url] || default
+    session.delete :forwarding_url
+  end
+
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
+  end
 end
