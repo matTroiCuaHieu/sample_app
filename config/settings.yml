@@ -16,6 +16,7 @@ user:
   email_maximum: 255
   email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   password_minimum: 6
+  password_reset_expired: 2
 avatar_size: 80
 boolean:
   true: 1
