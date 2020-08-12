@@ -9,8 +9,10 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user&.activated
+    @microposts = @user.microposts.page(params[:page]).per Settings.items_per_pages
+    return if @user
 
+    flash[:warning] = t ".user_not_found"
     redirect_to root_path
   end
 
@@ -79,11 +81,8 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
 
-<<<<<<< Updated upstream
     flash[:danger] = t "users.alert.user_not_found"
-=======
-    flash[:danger] = t "shared.user_not_found"
->>>>>>> Stashed changes
+
     redirect_to root_url
   end
 end

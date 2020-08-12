@@ -3,6 +3,7 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.7.1"
 
+gem "active_storage_validations"
 gem "autoprefixer-rails"
 gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.4.2", require: false
@@ -11,9 +12,12 @@ gem "bootstrap4-kaminari-views", "~> 1.0.1"
 gem "config"
 gem "faker", "2.1.2"
 gem "figaro"
+gem "i18n-js"
+gem "image_processing", "~> 1.0"
 gem "jbuilder", "~> 2.7"
 gem "jquery-rails", "4.3.1"
 gem "kaminari", "~> 1.2.1"
+gem "mini_magick", "4.10.1"
 gem "mysql2", ">= 0.4.4"
 gem "puma", "~> 4.1"
 gem "rails", "~> 6.0.2", ">= 6.0.2.2"
