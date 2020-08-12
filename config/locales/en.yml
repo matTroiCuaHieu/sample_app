@@ -121,3 +121,25 @@ en:
       password: Password
       confirmation: Password confirmation
       update_password: Update password
+  microposts:
+    create:
+      micropost: micropost
+      micropost_created: Micropost created!
+      micropost_fail: Create micropost failed
+    destroy:
+      micropost_deleted: Micropost deleted
+      delete_post_fail: Fail to delete !
+    image:
+      image_size: Maximum file size is 5MB. Please choose a smaller file.
+      valid_image_format: must be a valid image format
+      valid_image_size: should be less than 5MB
+    micropost:
+      ago: ago
+      delete: Delete
+      posted: Posted
+      you_sure: You sure?
+    micropost_form:
+      alert_detail: Maximum file size is 5MB. Please choose a smaller file.
+      compose_new_micropost: Compose new micropost...
+      post: Post
+    password_has_been_reset: Password has been reset.

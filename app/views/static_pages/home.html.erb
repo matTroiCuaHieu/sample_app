@@ -1,9 +1,29 @@
 <% provide :title, t(".title") %>
-<div class="center jumbotron">
-  <h1><%= t ".sample_app" %></h1>
-  <h2>
-    <h2><%= t(".content_html", href: link_to(t(".href_title"), Settings.links.rail_tutorial_link)) %><h2><br>
-    <%= link_to t(".sign_up"), signup_path , class: "btn btn-lg btn-primary" %>
-  </h2>
-</div>
-<%= link_to image_tag("rails.svg", alt: "Rails logo", width: Settings.image.rails.width), Settings.links.rails_home_page_link %>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t ".micropost_feed" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <% provide :title, t(".home_title") %>
+    <h1><%= t ".heading" %></h1>
+    <h2>
+      <%= t ".description_title" %>
+      <%= t ".description_detail" %>
+      <%= link_to t("ruby_on_rails_tut"), Settings.links.rails_tutorial.home_page %>
+    </h2>
+    <%= link_to t(".sign_up_button"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <%= link_to image_tag("rails.svg", alt: "Rails logo", width: Settings.static_pages.home.image_size), Settings.links.rails_tutorial.home_page %>
+<% end %>

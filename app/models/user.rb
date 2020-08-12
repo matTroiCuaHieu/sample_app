@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
+
   VALID_EMAIL_REGEX = Settings.user.email_regex
   USER_PARAMS = %i(name email password password_confirmation).freeze
 
@@ -71,7 +73,11 @@ class User < ApplicationRecord
   def password_reset_expired?
     reset_sent_at < Settings.user.password_reset_expired.hours.ago
   end
-  
+
+  def feed
+    microposts
+  end
+
   private
 
   def email_downcase
