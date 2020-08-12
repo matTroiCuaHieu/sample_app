@@ -79,6 +79,9 @@ en:
       invalid_activation_link: Invalid activation link!
     index:
       title: All users
+    show_follow:
+      microposts: Microposts
+      view_my_profile: view my profile
   shared:
     the_form_contains:  The form contains
     error: errors
@@ -143,3 +146,14 @@ en:
       compose_new_micropost: Compose new micropost...
       post: Post
     password_has_been_reset: Password has been reset.
+  follow:
+    follow: Follow
+    followers: Followers
+    following: Following
+    unfollow: Unfollow
+  relationships:
+    create:
+      user_not_exist: "User not exist"
+    destroy:
+      user_not_exist: "User not exist"
+

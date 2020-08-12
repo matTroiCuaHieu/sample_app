@@ -84,3 +84,13 @@ vi:
       error_email_password_invalid: Email / mật khẩu không hợp lệ
       remember_me: Ghi nhớ tài khoản
       login_successfully: Đăng nhập thành công!
+  follow:
+    follow: Follow
+    followers: Followers
+    following: Following
+    unfollow: Unfollow
+  relationships:
+    create:
+      user_not_exist: "User not exist"
+    destroy:
+      user_not_exist: "User not exist"

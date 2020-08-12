@@ -13,7 +13,8 @@ class Micropost < ApplicationRecord
     size: {less_than: Settings.files.pic_size.megabytes,
            message: I18n.t("microposts.image.valid_image_size", count: Settings.files.pic_size)}
 
-  scope :by_created_at, ->{order created_at: :desc}
+  scope :date_desc_posts, ->{order created_at: :desc}
+  scope :new_feed, ->(following_ids){where user_id: following_ids}
 
   def display_image
     image.variant resize_to_limit: [Settings.files.pic_resize, Settings.files.pic_resize]

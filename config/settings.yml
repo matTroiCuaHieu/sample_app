@@ -36,7 +36,7 @@ micropost:
     size: 5
     resize_to_limit: 500
     accept_type: "image/jpeg,image/gif,image/png"
-    content_type: %w(image/jpeg image/gif image/png)
+    content_type: /%w(image/jpeg image/gif image/png)/
     MAX_SIZE: 5
 micropost_per_homepages: 9
 files:
