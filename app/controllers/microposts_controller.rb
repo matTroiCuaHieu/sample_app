@@ -5,13 +5,24 @@ class MicropostsController < ApplicationController
   def create
     @micropost = current_user.microposts.build micropost_params
     @micropost.image.attach params[:micropost][:image]
-    save_micropost
-  end
+    if @micropost.save
+      flash[:success] = t ".success"
+      redirect_to root_url
+    else
+      @feed_items = feed_items
+      flash.now[:danger] = t ".fail"
+      render "static_pages/home"
+    end
 
   def destroy
     @micropost.destroy
     flash[:success] = t ".micropost_deleted"
     redirect_to request.referer || root_url
+  end
+
+  def feed_items
+    per_page = Settings.pagination.per_page
+    current_user.feed.date_desc_posts.page params[:page].per per_page
   end
 
   private

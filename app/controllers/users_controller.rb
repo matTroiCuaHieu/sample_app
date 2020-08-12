@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
-  before_action :correct_user, only: [:edit, :update]
+  before_action :logged_in_user, except: %i(new show create)
+  before_action :load_user, only: %i(show following followers)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
   before_action :find_user, only: :show
 
@@ -82,7 +83,26 @@ class UsersController < ApplicationController
     return if @user
 
     flash[:danger] = t "users.alert.user_not_found"
-
     redirect_to root_url
+  end
+
+  def following
+    @title = t ".title"
+    @users = @user.following.page params[:page]
+    render "show_follow"
+  end
+
+  def followers
+    @title = t ".title"
+    @users = @user.followers.page params[:page]
+    render "show_follow"
+  end
+
+  def load_user
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:warning] = t "user_not_found"
+    redirect_to root_path
   end
 end

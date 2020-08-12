@@ -5,6 +5,9 @@
       <section class="user_info">
         <%= render "shared/user_info" %>
       </section>
+      <section class="stats">
+        <%= render "shared/stats" %>
+      </section>
       <section class="micropost_form">
         <%= render "shared/micropost_form" %>
       </section>
@@ -21,9 +24,9 @@
     <h2>
       <%= t ".description_title" %>
       <%= t ".description_detail" %>
-      <%= link_to t("ruby_on_rails_tut"), Settings.links.rails_tutorial.home_page %>
+      <%= link_to t("ruby_on_rails_tut"), Settings.links.rail_tutorial_link %>
     </h2>
     <%= link_to t(".sign_up_button"), signup_path, class: "btn btn-lg btn-primary" %>
   </div>
-  <%= link_to image_tag("rails.svg", alt: "Rails logo", width: Settings.static_pages.home.image_size), Settings.links.rails_tutorial.home_page %>
+  <%= link_to image_tag("rails.svg", alt: "Rails logo", width: Settings.image.rails.width), Settings.links.rail_tutorial_link %>
 <% end %>
